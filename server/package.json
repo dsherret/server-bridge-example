@@ -1,0 +1,25 @@
+{
+  "name": "server-bridge-example-server",
+  "version": "1.0.0",
+  "description": "The server for server-bridge-example.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node dist/index.js",
+    "build": "tsc && node dist/generateClientSideCode.js"
+  },
+  "keywords": [
+    "server-bridge"
+  ],
+  "author": "David Sherret",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "server-bridge": "^2.0.1",
+    "server-bridge-express": "^2.0.1"
+  }
+}
